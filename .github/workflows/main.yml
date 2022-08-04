@@ -10,12 +10,12 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Publish Frontend
-    - uses: valar/action@v2
+      uses: valar/action@v2
       with:
         token: ${{ secrets.VALAR_TOKEN }}
         workdir: ./display
     - name: Publish Backend
-    - uses: valar/action@v2
+      uses: valar/action@v2
       with:
         token: ${{ secrets.VALAR_TOKEN }}
         workdir: ./server

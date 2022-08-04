@@ -1,0 +1,20 @@
+project: tim
+service: timereport
+build:
+    constructor: golang
+    ignore:
+        - .valar.yml
+        - .git
+    environment: []
+deployment:
+    skip: false
+    environment:
+        - key: KV_PROJECT
+          value: tim
+          secret: false
+        - key: KV_KEY
+          value: enzyme-benchmarks
+          secret: false
+        - key: SECURITY_TOKEN
+          value: cCoQ7cBODrddrA1xI8aASxzQK95rVPGipvpoCOOskpzLc1a2h8eK7niPZt8=
+          secret: true

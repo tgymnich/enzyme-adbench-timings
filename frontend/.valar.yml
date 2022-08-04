@@ -1,0 +1,20 @@
+project: tim
+service: timeviewer
+build:
+    constructor: golang
+    ignore:
+        - .valar.yml
+        - .git
+    environment: []
+deployment:
+    skip: false
+    environment:
+        - key: GROUP
+          value: Enzyme Benchmark Timings
+          secret: false
+        - key: KV_PROJECT
+          value: tim
+          secret: false
+        - key: KV_KEY
+          value: enzyme-benchmarks
+          secret: false

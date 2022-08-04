@@ -13,9 +13,9 @@ jobs:
       uses: valar/action@v2
       with:
         token: ${{ secrets.VALAR_TOKEN }}
-        workdir: ./display
+        workdir: ./frontend
     - name: Publish Backend
       uses: valar/action@v2
       with:
         token: ${{ secrets.VALAR_TOKEN }}
-        workdir: ./server
+        workdir: ./backend
